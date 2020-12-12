@@ -48,6 +48,7 @@ def main_win():
         quote_count=len(quote_data_sep)
         quoter["text"]=quote_data_sep[random.randint(0,quote_count-1)]
         quoter.after(20000,changer)
+    
     win=tk.Tk()
     fbvar=tk.IntVar()
     igvar=tk.IntVar()
@@ -77,6 +78,25 @@ def main_win():
     tw.place(x=0,y=120)
     tw.toggle()
 
+    #Timer
+    h=tk.StringVar()
+    m=tk.StringVar()
+    s=tk.StringVar()
+    h.set("00")
+    m.set("00")
+    s.set("00")
+    htim=tk.Label(text=00,bg="black",fg="SpringGreen",font=("Courier", 80))
+    htim.pack()
+    htim.place(x=650-60,y=300-80)
+    mtim=tk.Label(text=00,bg="black",fg="SpringGreen",font=("Courier", 80))
+    mtim.pack()
+    mtim.place(x=800-60,y=300-80)
+    stim=tk.Label(text=00,bg="black",fg="SpringGreen",font=("Courier", 80))
+    stim.pack()
+    stim.place(x=950-60,y=300-80)
+    dcbut=tk.Button(text="Disconnect",font=("Courier", 30))
+    dcbut.pack()
+    dcbut.place(x=640,y=500-80)
 
 
 
