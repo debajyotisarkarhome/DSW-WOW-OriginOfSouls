@@ -81,6 +81,7 @@ def main_win():
     def cheater():
         global temp
         temp=temp-600
+        cheatactivator["state"]="disabled"
 
     def initiater():
         if fbvar.get()==1:
