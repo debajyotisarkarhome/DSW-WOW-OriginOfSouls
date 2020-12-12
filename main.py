@@ -41,6 +41,13 @@ def eula():
 
 
 def main_win():
+    def changer():
+        quote_filer=open("quotes.csv","r+")
+        quote_data=quote_filer.read()
+        quote_data_sep=quote_data.split("&")
+        quote_count=len(quote_data_sep)
+        quoter["text"]=quote_data_sep[random.randint(0,quote_count-1)]
+        quoter.after(20000,changer)
     win=tk.Tk()
     fbvar=tk.IntVar()
     igvar=tk.IntVar()
@@ -73,7 +80,7 @@ def main_win():
 
 
 
-
+    quoter.after(5000,changer)
     win.mainloop()
 
 
