@@ -25,7 +25,7 @@ def eula():
         eula.geometry("720x400")
         eula.configure(bg='black')
         notice=tk.Label(text='''Hello User,
-    Welcome to the DisConnect !
+    Welcome to the D!sConnect !
     By clicking the big button on the next page you'll be 
     blocking your access to social media sites until the 
     clock gets to zero (which'll be an hour afterwards)
@@ -67,7 +67,7 @@ def main_win():
 
         temp -= 1
         win.update()
-        if temp%10==0:
+        if temp%600==0:
             cheat["text"]='''Your task to get a 10 min cheat = '''+tasks[random.randint(0,len(tasks)-1)]
             win.update()
             cheatactivator["state"]="normal"
@@ -99,11 +99,11 @@ def main_win():
     igvar=tk.IntVar()
     rdvar=tk.IntVar()
     twvar=tk.IntVar()
-    win.title("DisConnect")
+    win.title("D!sConnect")
     win.geometry("1920x720")
     win.configure(bg='black')
     #quote=tk.StringVar()
-    quoter=tk.Label(win,text="Welcome to Project DisConnect",bg="black",font=("Courier", 17),fg="SpringGreen")
+    quoter=tk.Label(win,text="Welcome to Project D!sConnect",bg="black",font=("Courier", 17),fg="SpringGreen")
     quoter.pack()
     #Checkboxes
     fb=tk.Checkbutton(text="Facebook",bg="black",fg="SpringGreen",font=("Courier", 15),variable=fbvar)
@@ -139,7 +139,7 @@ def main_win():
     stim=tk.Label(text=00,bg="black",fg="SpringGreen",font=("Courier", 80))
     stim.pack()
     stim.place(x=950-60,y=300-80)
-    dcbut=tk.Button(text="Disconnect",font=("Courier", 30),command=initiater)
+    dcbut=tk.Button(text="D!sconnect",font=("Courier", 30),command=initiater)
     dcbut.pack()
     dcbut.place(x=640,y=500-80)
 
